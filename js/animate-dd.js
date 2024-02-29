@@ -1,0 +1,4 @@
+function animateDropDownBoxWithHeader(onLoad,box,forceOpen){let header=box.children[0];let body=box.children[1];let headerArrow=header.children[1];for(let child of headerArrow.children){if(child.nodeName==='IMG'){headerArrow=child;break;}}
+if(onLoad){box.style.maxHeight=`${header.offsetHeight}px`;return;}
+let fullHeight=box.offsetHeight;if(fullHeight>header.offsetHeight&&!forceOpen){box.style.maxHeight=`${header.offsetHeight}px`;headerArrow.style.transform='rotate(0deg)';}else{box.style.maxHeight=`${header.offsetHeight+body.offsetHeight}px`;headerArrow.style.transform='rotate(180deg)';}}
+for(let box of document.getElementsByClassName('box-with-header')){if(box.id==='animate-dd'){animateDropDownBoxWithHeader(true,box);box.children[0].addEventListener('click',function(){animateDropDownBoxWithHeader(false,this.parentElement);});}}
