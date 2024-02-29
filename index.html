@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>6Б-Класс » Главная</title>
-<link href="./assets/css/main.css" rel="stylesheet">
-<link href="./assets/css/two.css" rel="stylesheet"> 
+<link href="./css/main.css" rel="stylesheet">
+<link href="./css/two.css" rel="stylesheet"> 
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link href="./assets/css/css2" rel="stylesheet">
+<link href="./css/css2" rel="stylesheet">
 
 </head>
 <body>
@@ -22,7 +22,7 @@
 
 <div class="main-container">
 <div class="left">
-<div id="mobile-nav-img" class="mobile-nav-img"><img src="./8/navigation.png" alt="" width="32" height="32"></div>
+<div id="mobile-nav-img" class="mobile-nav-img"><img src="./img/navigation.png" alt="" width="32" height="32"></div>
 <div id="mobile-nav" class="mobile-nav">
 <div class="item" id="current-item" onclick="window.location=&#39;/&#39;">Код-пароль</div><div class="item" onclick="window.location=&#39;/news&#39;">Секретик</div> </div>
 <div class="logo" onclick="window.location = &#39;/&#39;">Марта</div>
@@ -35,7 +35,7 @@
 Код-пароль</div>
 </div>
 <div class="void20"></div>
-<script src="./assets/js/header.js"></script>
+<script src="./js/header.js"></script>
 <div class="auth main-container">
 <div class="box-with-header">
 <div class="header">
@@ -74,7 +74,7 @@ if (password === "123123") {
 	reason = "Ввёден некорректный пароль.";
     console.log('wrong');
     errText.style.display = 'flex';errText.style.display = 'flex';
-    errText.innerHTML = `<img src="./8/images.png" alt="" width="16" height="16" style="margin-right: 5px;"> ${reason} </img>`;
+    errText.innerHTML = `<img src="./img/images.png" alt="" width="16" height="16" style="margin-right: 5px;"> ${reason} </img>`;
 	authBtn.style.display='flex';
 	loader.style.display = 'none';
 }
